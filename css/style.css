@@ -303,13 +303,18 @@ a {
 ========================= */
 
 .hero-conteudo {
-    max-width: 780px;
+    width: min(720px, 58vw);
+    margin: 0 auto;
 
     text-align: center;
 
     position: relative;
-
     z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -320,11 +325,17 @@ a {
 
     display: block;
 
+    width: 100%;
+
+    text-align: center;
+
     color: #596f89;
 
-    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-size: clamp(2.6rem, 4.5vw, 4rem);
 
     line-height: 1;
+
+    margin-bottom: 8px;
 }
 
 
@@ -342,18 +353,21 @@ a {
 /* NOME DA LOJA */
 
 .hero h2 {
+    width: 100%;
+
     font-family: 'Playfair Display', serif;
 
-    font-size: clamp(3rem, 7vw, 5.4rem);
+    font-size: clamp(3rem, 5vw, 5rem);
 
-    line-height: 1;
+    line-height: 1.05;
+
+    text-align: center;
 
     color: var(--azul-texto);
 
     text-shadow:
         0 3px 8px rgba(255, 255, 255, 0.5);
 }
-
 
 /* FRASE DA MARCA */
 
@@ -571,10 +585,10 @@ a {
 /* NUVEM ESQUERDA */
 
 .pensamento-esquerda {
-    left: 6%;
-
-    top: 95px;
+    left: 5%;
+    top: 110px;
 }
+
 
 .pensamento-esquerda
 .nuvem-pensamento {
@@ -596,9 +610,8 @@ a {
 /* NUVEM DIREITA */
 
 .pensamento-direita {
-    right: 6%;
-
-    top: 80px;
+    right: 5%;
+    top: 110px;
 
     animation-delay: 1.2s;
 }
