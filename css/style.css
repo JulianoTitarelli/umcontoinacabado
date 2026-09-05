@@ -199,41 +199,40 @@ a {
     position: relative;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     overflow: hidden;
 
     padding: 80px 20px 110px;
 
-   background:
-    radial-gradient(
-        circle at 8% 70%,
-        rgba(255, 205, 224, 0.55),
-        transparent 24%
-    ),
+    background:
+        radial-gradient(
+            circle at 8% 70%,
+            rgba(255, 205, 224, 0.55),
+            transparent 24%
+        ),
 
-    radial-gradient(
-        circle at 92% 68%,
-        rgba(255, 211, 226, 0.55),
-        transparent 24%
-    ),
+        radial-gradient(
+            circle at 92% 68%,
+            rgba(255, 211, 226, 0.55),
+            transparent 24%
+        ),
 
-    radial-gradient(
-        circle at 50% 90%,
-        rgba(255, 227, 236, 0.48),
-        transparent 35%
-    ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255, 227, 236, 0.48),
+            transparent 35%
+        ),
 
-    linear-gradient(
-        180deg,
-        #ccecff 0%,
-        #dcf2ff 42%,
-        #f1eafa 78%,
-        #f9edf2 100%
-    );
+        linear-gradient(
+            180deg,
+            #ccecff 0%,
+            #dcf2ff 42%,
+            #f1eafa 78%,
+            #f9edf2 100%
+        );
+}
 
 /* =========================
    NUVENS DA PARTE INFERIOR
