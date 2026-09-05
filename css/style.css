@@ -38,16 +38,21 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+   body {
     font-family: 'DM Sans', sans-serif;
 
-    background: var(--creme);
+    background:
+        linear-gradient(
+            180deg,
+            #f5fbff 0%,
+            #edf8ff 45%,
+            #f8fcff 100%
+        );
 
     color: var(--texto);
 
     overflow-x: hidden;
 }
-
 a {
     color: inherit;
 }
@@ -203,28 +208,32 @@ a {
 
     padding: 80px 20px 110px;
 
-    background:
+   background:
+    radial-gradient(
+        circle at 8% 70%,
+        rgba(255, 205, 224, 0.55),
+        transparent 24%
+    ),
 
-        radial-gradient(
-            circle at 18% 35%,
-            rgba(248, 208, 223, 0.85),
-            transparent 25%
-        ),
+    radial-gradient(
+        circle at 92% 68%,
+        rgba(255, 211, 226, 0.55),
+        transparent 24%
+    ),
 
-        radial-gradient(
-            circle at 80% 25%,
-            rgba(255, 241, 199, 0.9),
-            transparent 25%
-        ),
+    radial-gradient(
+        circle at 50% 90%,
+        rgba(255, 227, 236, 0.48),
+        transparent 35%
+    ),
 
-        linear-gradient(
-            180deg,
-            #d7effd 0%,
-            #e8f7ff 45%,
-            #f9e3eb 100%
-        );
-}
-
+    linear-gradient(
+        180deg,
+        #ccecff 0%,
+        #dcf2ff 42%,
+        #f1eafa 78%,
+        #f9edf2 100%
+    );
 
 /* =========================
    NUVENS DA PARTE INFERIOR
