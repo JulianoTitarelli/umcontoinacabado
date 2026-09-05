@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Um Conto Inacabado</title>
 
@@ -14,71 +12,106 @@
 
 <body>
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
-
+    <!-- CABEÇALHO -->
     <header class="topo">
 
-        <div class="marca">
+        <div class="logo-marca">
+            <div class="logo-simbolo">♡</div>
 
-            <h1>Um Conto Inacabado</h1>
+            <div>
+                <h1>Um Conto Inacabado</h1>
+                <p>Pequenos detalhes, grandes histórias</p>
+            </div>
+        </div>
 
-            <p>
-                Pequenos detalhes,
-                grandes histórias ♡
-            </p>
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#colecoes">Coleções</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
 
+        <div class="acoes-topo">
+            <button class="botao-icone">⌕</button>
+            <button class="botao-icone">♡</button>
+            <button class="botao-icone">⌑</button>
         </div>
 
     </header>
 
 
-    <!-- =========================
-         APRESENTAÇÃO
-    ========================== -->
-
+    <!-- HERO -->
     <main>
 
-        <section class="apresentacao">
+        <section class="hero" id="inicio">
 
-            <span class="detalhe">✦ ♡ ✦</span>
+            <div class="balao balao-esquerda">
+                <div class="balao-corpo"></div>
+                <div class="balao-cesto"></div>
+            </div>
 
-            <h2>
-                Contos que começam aqui...
-            </h2>
+            <div class="balao balao-direita">
+                <div class="balao-corpo"></div>
+                <div class="balao-cesto"></div>
+            </div>
 
-            <p>
-                Peças feitas à mão com carinho,
-                esperando fazer parte da sua história.
-            </p>
+            <div class="balao balao-pequeno">
+                <div class="balao-corpo"></div>
+                <div class="balao-cesto"></div>
+            </div>
 
-            <a href="#colecoes" class="botao-principal">
-                Conheça nossas peças ♡
-            </a>
+
+            <div class="hero-conteudo">
+
+                <span class="bem-vinda">
+                    Bem-vinda ao
+                </span>
+
+                <div class="coracao-titulo">♡</div>
+
+                <h2>
+                    Um Conto Inacabado
+                </h2>
+
+                <p class="frase-marca">
+                    PEQUENOS DETALHES, GRANDES HISTÓRIAS
+                </p>
+
+                <p class="descricao-hero">
+                    Peças feitas à mão com carinho,
+                    esperando fazer parte da sua história.
+                </p>
+
+                <a href="#colecoes" class="botao-principal">
+                    Conheça nossas peças ♡
+                </a>
+
+            </div>
 
         </section>
 
 
-        <!-- =========================
-             COLEÇÕES
-        ========================== -->
-
+        <!-- COLEÇÕES -->
         <section class="colecoes" id="colecoes">
 
-            <h2>Nossas coleções</h2>
+            <div class="titulo-secao">
+                <h2>Nossas coleções</h2>
 
-            <p class="subtitulo">
-                Escolha por onde seu conto vai começar ✨
-            </p>
+                <span>♡</span>
+
+                <p>
+                    Escolha por onde seu conto vai começar...
+                </p>
+            </div>
 
 
             <div class="grade-colecoes">
 
-
                 <a href="#" class="card-colecao azul">
 
-                    <span class="icone">♡</span>
+                    <div class="icone-card">
+                        ୨୧
+                    </div>
 
                     <h3>Brincos</h3>
 
@@ -87,12 +120,16 @@
                         transformar o seu dia.
                     </p>
 
+                    <span class="seta-card">→</span>
+
                 </a>
 
 
                 <a href="#" class="card-colecao rosa">
 
-                    <span class="icone">✿</span>
+                    <div class="icone-card">
+                        ♡
+                    </div>
 
                     <h3>Colares</h3>
 
@@ -101,26 +138,34 @@
                         pertinho do coração.
                     </p>
 
+                    <span class="seta-card">→</span>
+
                 </a>
 
 
                 <a href="#" class="card-colecao amarelo">
 
-                    <span class="icone">✦</span>
+                    <div class="icone-card">
+                        ✦
+                    </div>
 
                     <h3>Pulseiras</h3>
 
                     <p>
-                        Um toque delicado para
-                        acompanhar você.
+                        Um toque delicado
+                        para acompanhar você.
                     </p>
+
+                    <span class="seta-card">→</span>
 
                 </a>
 
 
-                <a href="#" class="card-colecao azul">
+                <a href="#" class="card-colecao rosa">
 
-                    <span class="icone">☆</span>
+                    <div class="icone-card">
+                        ♡
+                    </div>
 
                     <h3>Novidades</h3>
 
@@ -129,53 +174,75 @@
                         da nossa história.
                     </p>
 
+                    <span class="seta-card">→</span>
+
                 </a>
 
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="sobre" id="sobre">
+
+            <div class="sobre-ilustracao">
+
+                <div class="livro">
+                    <div class="pagina esquerda"></div>
+                    <div class="pagina direita"></div>
+                    <div class="linha-livro"></div>
+                </div>
+
+                <div class="raminho">
+                    ✿ ♡
+                </div>
+
+            </div>
+
+
+            <div class="sobre-texto">
+
+                <h2>
+                    Feito à mão para você
+                </h2>
+
+                <p>
+                    Cada peça nasce aos poucos,
+                    feita com carinho e atenção aos detalhes.
+                    Porque algumas histórias começam
+                    nas coisas mais pequenas.
+                </p>
+
+                <span class="detalhe-sobre">
+                    — ♡ —
+                </span>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             SOBRE A MARCA
-        ========================== -->
+        <!-- INFORMAÇÕES -->
+        <section class="informacoes">
 
-        <section class="feito-a-mao">
-
-            <span>♡</span>
-
-            <h2>Feito à mão para você</h2>
-
-            <p>
-                Cada peça nasce aos poucos,
-                feita com carinho e atenção aos detalhes.
-                Porque algumas histórias começam
-                nas coisas mais pequenas.
-            </p>
-
-        </section>
-
-
-        <!-- =========================
-             BENEFÍCIOS
-        ========================== -->
-
-        <section class="beneficios">
-
-            <div>
-                <span>🩵</span>
-                <strong>Produção artesanal</strong>
+            <div class="info">
+                <span class="icone-identidade">⌁♡</span>
+                <p>Produção artesanal</p>
             </div>
 
-            <div>
-                <span>🌼</span>
-                <strong>Frete especial para o estado de SP</strong>
+            <span class="barra">|</span>
+
+            <div class="info">
+                <span class="icone-identidade">✦✧</span>
+                <p>Frete especial para o estado de SP</p>
             </div>
 
-            <div>
-                <span>🌸</span>
-                <strong>Finalize pelo WhatsApp</strong>
+            <span class="barra">|</span>
+
+            <div class="info">
+                <span class="icone-identidade">♡...</span>
+                <p>Finalize pelo WhatsApp</p>
             </div>
 
         </section>
@@ -183,20 +250,43 @@
     </main>
 
 
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
+    <!-- RODAPÉ -->
+    <footer id="contato">
 
-    <footer>
+        <div class="rodape-conteudo">
 
-        <h3>Um Conto Inacabado</h3>
+            <div>
+                <h3>Um Conto Inacabado</h3>
 
-        <p>
-            Feito à mão, capítulo por capítulo. ♡
-        </p>
+                <p>
+                    Feito à mão, capítulo por capítulo. ♡
+                </p>
+            </div>
+
+
+            <div class="links-rodape">
+                <a href="#inicio">Início</a>
+                <a href="#colecoes">Coleções</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+
+            <div class="redes">
+
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+        <div class="mensagem-final">
+            Obrigado por fazer parte desse conto... ♡
+        </div>
 
     </footer>
-
 
 </body>
 
