@@ -244,67 +244,33 @@ a {
 
     position: absolute;
 
-    left: -5%;
+    left: -4%;
+    bottom: -35px;
 
-    bottom: -55px;
-
-    width: 110%;
-
-    height: 145px;
+    width: 108%;
+    height: 190px;
 
     background:
+        radial-gradient(circle at 4% 72%,  #ffffff 0 58px, transparent 60px),
+        radial-gradient(circle at 12% 58%, #f8dfe9 0 72px, transparent 74px),
+        radial-gradient(circle at 20% 72%, #dff3ff 0 62px, transparent 64px),
 
-        radial-gradient(
-            circle at 7% 65%,
-            white 0 55px,
-            transparent 57px
-        ),
+        radial-gradient(circle at 29% 60%, #ffffff 0 76px, transparent 78px),
+        radial-gradient(circle at 37% 73%, #f9e2eb 0 60px, transparent 62px),
+        radial-gradient(circle at 46% 58%, #dff3ff 0 80px, transparent 82px),
 
-        radial-gradient(
-            circle at 18% 55%,
-            white 0 72px,
-            transparent 74px
-        ),
+        radial-gradient(circle at 56% 72%, #ffffff 0 64px, transparent 66px),
+        radial-gradient(circle at 65% 58%, #f9e1eb 0 76px, transparent 78px),
+        radial-gradient(circle at 74% 72%, #dff3ff 0 64px, transparent 66px),
 
-        radial-gradient(
-            circle at 30% 70%,
-            white 0 58px,
-            transparent 60px
-        ),
+        radial-gradient(circle at 83% 58%, #ffffff 0 78px, transparent 80px),
+        radial-gradient(circle at 91% 72%, #f8dfe9 0 62px, transparent 64px),
+        radial-gradient(circle at 98% 60%, #dff3ff 0 72px, transparent 74px);
 
-        radial-gradient(
-            circle at 43% 55%,
-            white 0 80px,
-            transparent 82px
-        ),
+    opacity: 0.96;
 
-        radial-gradient(
-            circle at 58% 68%,
-            white 0 62px,
-            transparent 64px
-        ),
-
-        radial-gradient(
-            circle at 72% 55%,
-            white 0 78px,
-            transparent 80px
-        ),
-
-        radial-gradient(
-            circle at 88% 65%,
-            white 0 66px,
-            transparent 68px
-        ),
-
-        radial-gradient(
-            circle at 97% 55%,
-            white 0 72px,
-            transparent 74px
-        );
-
-    opacity: 0.95;
+    z-index: 1;
 }
-
 
 /* =========================
    CONTEÚDO PRINCIPAL HERO
