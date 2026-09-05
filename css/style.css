@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Sacramento&display=swap');
 
+
+/* =========================
+   CORES DA MARCA
+========================= */
+
 :root {
     --azul-bebe: #d7effd;
     --azul-claro: #edf8ff;
+
     --rosa-bebe: #f9dce7;
     --rosa: #e7a4bb;
+
     --amarelo-claro: #fff1c7;
+
     --creme: #fffaf4;
     --branco: #ffffff;
+
     --azul-texto: #28415f;
     --texto: #59697c;
+
     --sombra: rgba(62, 87, 110, 0.12);
 }
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
 * {
     box-sizing: border-box;
@@ -25,8 +40,11 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
+
     background: var(--creme);
+
     color: var(--texto);
+
     overflow-x: hidden;
 }
 
@@ -41,46 +59,65 @@ a {
 
 .topo {
     min-height: 78px;
+
     background: rgba(255, 255, 255, 0.96);
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     padding: 12px 6%;
 
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
-    box-shadow: 0 3px 16px rgba(75, 91, 106, 0.06);
+    box-shadow:
+        0 3px 16px rgba(75, 91, 106, 0.06);
 }
+
+
+/* LOGO */
 
 .logo-marca {
     display: flex;
+
     align-items: center;
+
     gap: 12px;
 }
 
 .logo-simbolo {
     width: 48px;
+
     height: 48px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border: 1.8px solid #8199b3;
+
     border-radius: 50%;
 
     font-size: 1.45rem;
+
     color: var(--rosa);
 }
 
 .logo-marca h1 {
     font-family: 'Playfair Display', serif;
+
     color: var(--azul-texto);
+
     font-size: 1.35rem;
+
     line-height: 1.1;
 }
 
@@ -88,20 +125,28 @@ a {
     margin-top: 3px;
 
     font-size: 0.65rem;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
 
     color: #7f91a2;
 }
 
+
+/* MENU */
+
 .menu {
     display: flex;
+
     align-items: center;
+
     gap: 34px;
 }
 
 .menu a {
     text-decoration: none;
+
     font-size: 0.95rem;
 
     color: var(--azul-texto);
@@ -113,19 +158,26 @@ a {
     color: var(--rosa);
 }
 
+
+/* ÍCONES DO TOPO */
+
 .acoes-topo {
     display: flex;
+
     gap: 8px;
 }
 
 .botao-icone {
     width: 42px;
+
     height: 42px;
 
     background: transparent;
+
     border: none;
 
     color: var(--azul-texto);
+
     font-size: 1.4rem;
 
     cursor: pointer;
@@ -133,7 +185,7 @@ a {
 
 
 /* =========================
-   HERO
+   HERO / CÉU
 ========================= */
 
 .hero {
@@ -142,7 +194,9 @@ a {
     position: relative;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     overflow: hidden;
@@ -150,16 +204,19 @@ a {
     padding: 80px 20px 110px;
 
     background:
+
         radial-gradient(
             circle at 18% 35%,
             rgba(248, 208, 223, 0.85),
             transparent 25%
         ),
+
         radial-gradient(
             circle at 80% 25%,
             rgba(255, 241, 199, 0.9),
             transparent 25%
         ),
+
         linear-gradient(
             180deg,
             #d7effd 0%,
@@ -169,43 +226,94 @@ a {
 }
 
 
-/* nuvens */
+/* =========================
+   NUVENS DA PARTE INFERIOR
+   DO CÉU
+========================= */
 
 .hero::after {
     content: "";
 
     position: absolute;
+
     left: -5%;
+
     bottom: -55px;
 
     width: 110%;
+
     height: 145px;
 
     background:
-        radial-gradient(circle at 7% 65%, white 0 55px, transparent 57px),
-        radial-gradient(circle at 18% 55%, white 0 72px, transparent 74px),
-        radial-gradient(circle at 30% 70%, white 0 58px, transparent 60px),
-        radial-gradient(circle at 43% 55%, white 0 80px, transparent 82px),
-        radial-gradient(circle at 58% 68%, white 0 62px, transparent 64px),
-        radial-gradient(circle at 72% 55%, white 0 78px, transparent 80px),
-        radial-gradient(circle at 88% 65%, white 0 66px, transparent 68px),
-        radial-gradient(circle at 97% 55%, white 0 72px, transparent 74px);
+
+        radial-gradient(
+            circle at 7% 65%,
+            white 0 55px,
+            transparent 57px
+        ),
+
+        radial-gradient(
+            circle at 18% 55%,
+            white 0 72px,
+            transparent 74px
+        ),
+
+        radial-gradient(
+            circle at 30% 70%,
+            white 0 58px,
+            transparent 60px
+        ),
+
+        radial-gradient(
+            circle at 43% 55%,
+            white 0 80px,
+            transparent 82px
+        ),
+
+        radial-gradient(
+            circle at 58% 68%,
+            white 0 62px,
+            transparent 64px
+        ),
+
+        radial-gradient(
+            circle at 72% 55%,
+            white 0 78px,
+            transparent 80px
+        ),
+
+        radial-gradient(
+            circle at 88% 65%,
+            white 0 66px,
+            transparent 68px
+        ),
+
+        radial-gradient(
+            circle at 97% 55%,
+            white 0 72px,
+            transparent 74px
+        );
 
     opacity: 0.95;
 }
 
 
 /* =========================
-   CONTEÚDO HERO
+   CONTEÚDO PRINCIPAL HERO
 ========================= */
 
 .hero-conteudo {
     max-width: 780px;
+
     text-align: center;
 
     position: relative;
+
     z-index: 5;
 }
+
+
+/* BEM-VINDA AO */
 
 .bem-vinda {
     font-family: 'Sacramento', cursive;
@@ -215,31 +323,45 @@ a {
     color: #596f89;
 
     font-size: clamp(2.2rem, 5vw, 4rem);
+
     line-height: 1;
 }
 
+
+/* CORAÇÃO ACIMA DO TÍTULO */
+
 .coracao-titulo {
-    margin: 2px 0 2px;
+    margin: 2px 0;
 
     color: var(--rosa);
+
     font-size: 1.7rem;
 }
+
+
+/* NOME DA LOJA */
 
 .hero h2 {
     font-family: 'Playfair Display', serif;
 
     font-size: clamp(3rem, 7vw, 5.4rem);
+
     line-height: 1;
 
     color: var(--azul-texto);
 
-    text-shadow: 0 3px 8px rgba(255,255,255,0.5);
+    text-shadow:
+        0 3px 8px rgba(255, 255, 255, 0.5);
 }
+
+
+/* FRASE DA MARCA */
 
 .frase-marca {
     margin-top: 22px;
 
     letter-spacing: 5px;
+
     font-family: 'Playfair Display', serif;
 
     font-size: 0.85rem;
@@ -247,16 +369,23 @@ a {
     color: #50677e;
 }
 
+
+/* DESCRIÇÃO */
+
 .descricao-hero {
     max-width: 520px;
 
     margin: 24px auto;
 
     font-size: 1.05rem;
+
     line-height: 1.6;
 
     color: #5b6c7e;
 }
+
+
+/* BOTÃO PRINCIPAL */
 
 .botao-principal {
     display: inline-block;
@@ -268,6 +397,7 @@ a {
     border-radius: 999px;
 
     text-decoration: none;
+
     font-weight: 600;
 
     background:
@@ -279,7 +409,8 @@ a {
 
     color: white;
 
-    box-shadow: 0 10px 24px rgba(193, 120, 145, 0.25);
+    box-shadow:
+        0 10px 24px rgba(193, 120, 145, 0.25);
 
     transition: 0.2s;
 }
@@ -290,106 +421,216 @@ a {
 
 
 /* =========================
-   BALÕES
+   NUVENS DE PENSAMENTO
 ========================= */
 
-.balao {
+.pensamento {
     position: absolute;
+
     z-index: 3;
 
-    animation: flutuar 5s ease-in-out infinite;
+    animation:
+        flutuar-pensamento
+        5s
+        ease-in-out
+        infinite;
 }
 
-.balao-esquerda {
-    left: 3%;
-    top: 65px;
-    transform: scale(1.25);
-}
 
-.balao-direita {
-    right: 5%;
-    top: 50px;
-    transform: scale(1.1);
+/* CORPO DA NUVEM */
 
-    animation-delay: 0.8s;
-}
+.nuvem-pensamento {
+    width: 210px;
 
-.balao-pequeno {
-    right: 21%;
-    top: 210px;
-    transform: scale(0.6);
-
-    animation-delay: 1.6s;
-}
-
-.balao-corpo {
-    width: 100px;
-    height: 125px;
+    height: 145px;
 
     position: relative;
 
-    border-radius: 50% 50% 48% 48% / 54% 54% 45% 45%;
+    display: flex;
 
-    background:
-        linear-gradient(
-            90deg,
-            #f4c9d5 0 18%,
-            #fff7ef 18% 38%,
-            #d8edfb 38% 62%,
-            #fff7ef 62% 82%,
-            #f4c9d5 82%
-        );
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius:
+        48% 52% 46% 54% /
+        55% 46% 54% 45%;
 
     box-shadow:
-        inset -10px 0 14px rgba(70, 95, 120, 0.08),
-        0 8px 20px rgba(70, 95, 120, 0.15);
+        0 10px 30px rgba(79, 102, 126, 0.10),
+        inset 0 0 30px rgba(255, 255, 255, 0.7);
 }
 
-.balao-corpo::before,
-.balao-corpo::after {
+
+/* PARTES ARREDONDADAS */
+
+.nuvem-pensamento::before,
+.nuvem-pensamento::after {
     content: "";
 
     position: absolute;
 
-    bottom: -26px;
+    background: inherit;
 
-    width: 1px;
-    height: 34px;
+    border-radius: 50%;
 
-    background: #b69b91;
+    z-index: -1;
 }
 
-.balao-corpo::before {
-    left: 35px;
+.nuvem-pensamento::before {
+    width: 105px;
+
+    height: 105px;
+
+    left: 18px;
+
+    top: -22px;
 }
 
-.balao-corpo::after {
-    right: 35px;
+.nuvem-pensamento::after {
+    width: 120px;
+
+    height: 110px;
+
+    right: 12px;
+
+    top: -15px;
 }
 
-.balao-cesto {
-    width: 35px;
-    height: 25px;
 
-    margin: 28px auto 0;
+/* TEXTO DAS NUVENS */
 
-    background: #caa27f;
+.nuvem-pensamento p {
+    position: relative;
 
-    border-radius: 4px 4px 7px 7px;
+    z-index: 2;
+
+    font-family: 'Sacramento', cursive;
+
+    font-size: 1.65rem;
+
+    line-height: 1.05;
+
+    color: #4d6a88;
+}
+
+
+/* CORAÇÃO DAS NUVENS */
+
+.mini-coracao {
+    position: relative;
+
+    z-index: 2;
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #e89ab3;
+
+    font-size: 1.35rem;
+}
+
+
+/* BOLINHAS DE PENSAMENTO */
+
+.bolha {
+    position: absolute;
+
+    display: block;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.90);
 
     box-shadow:
-        inset 0 4px rgba(255,255,255,0.25);
+        0 5px 12px rgba(70, 90, 110, 0.08);
 }
 
-@keyframes flutuar {
+.bolha-1 {
+    width: 25px;
+
+    height: 25px;
+
+    bottom: -30px;
+}
+
+.bolha-2 {
+    width: 13px;
+
+    height: 13px;
+
+    bottom: -52px;
+}
+
+
+/* NUVEM ESQUERDA */
+
+.pensamento-esquerda {
+    left: 6%;
+
+    top: 95px;
+}
+
+.pensamento-esquerda
+.nuvem-pensamento {
+    background:
+        rgba(255, 240, 246, 0.94);
+}
+
+.pensamento-esquerda
+.bolha-1 {
+    right: 20px;
+}
+
+.pensamento-esquerda
+.bolha-2 {
+    right: 2px;
+}
+
+
+/* NUVEM DIREITA */
+
+.pensamento-direita {
+    right: 6%;
+
+    top: 80px;
+
+    animation-delay: 1.2s;
+}
+
+.pensamento-direita
+.nuvem-pensamento {
+    background:
+        rgba(255, 246, 219, 0.94);
+}
+
+.pensamento-direita
+.bolha-1 {
+    left: 20px;
+}
+
+.pensamento-direita
+.bolha-2 {
+    left: 2px;
+}
+
+
+/* MOVIMENTO DAS NUVENS */
+
+@keyframes flutuar-pensamento {
 
     0%,
     100% {
-        translate: 0 0;
+        transform: translateY(0);
     }
 
     50% {
-        translate: 0 -13px;
+        transform: translateY(-9px);
     }
 
 }
@@ -401,6 +642,7 @@ a {
 
 .colecoes {
     max-width: 1200px;
+
     margin: 0 auto;
 
     padding: 80px 24px 85px;
@@ -408,12 +650,16 @@ a {
     text-align: center;
 }
 
+
+/* TÍTULO */
+
 .titulo-secao h2 {
     font-family: 'Playfair Display', serif;
 
     color: var(--azul-texto);
 
-    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-size:
+        clamp(2.4rem, 5vw, 3.6rem);
 }
 
 .titulo-secao span {
@@ -430,13 +676,20 @@ a {
     color: #647485;
 }
 
+
+/* GRADE */
+
 .grade-colecoes {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 20px;
 }
+
+
+/* CARDS */
 
 .card-colecao {
     min-height: 245px;
@@ -448,6 +701,7 @@ a {
     border-radius: 28px;
 
     text-decoration: none;
+
     text-align: left;
 
     color: var(--texto);
@@ -455,7 +709,8 @@ a {
     overflow: hidden;
 
     box-shadow:
-        0 12px 30px rgba(77, 92, 108, 0.10);
+        0 12px 30px
+        rgba(77, 92, 108, 0.10);
 
     transition: 0.25s;
 }
@@ -463,6 +718,9 @@ a {
 .card-colecao:hover {
     transform: translateY(-6px);
 }
+
+
+/* CARD AZUL */
 
 .card-colecao.azul {
     background:
@@ -473,6 +731,9 @@ a {
         );
 }
 
+
+/* CARD ROSA */
+
 .card-colecao.rosa {
     background:
         linear-gradient(
@@ -481,6 +742,9 @@ a {
             #fff0f5
         );
 }
+
+
+/* CARD AMARELO */
 
 .card-colecao.amarelo {
     background:
@@ -491,6 +755,9 @@ a {
         );
 }
 
+
+/* ÍCONE DOS CARDS */
+
 .icone-card {
     font-size: 2.2rem;
 
@@ -499,40 +766,58 @@ a {
     color: var(--rosa);
 }
 
-.card-colecao.amarelo .icone-card {
+.card-colecao.amarelo
+.icone-card {
     color: #daa746;
 }
 
+
+/* TÍTULO DO CARD */
+
 .card-colecao h3 {
-    font-family: 'Playfair Display', serif;
+    font-family:
+        'Playfair Display',
+        serif;
 
     color: var(--azul-texto);
 
     font-size: 1.45rem;
 }
 
+
+/* TEXTO DO CARD */
+
 .card-colecao p {
     margin-top: 7px;
 
     font-size: 0.92rem;
+
     line-height: 1.45;
 }
+
+
+/* SETA */
 
 .seta-card {
     position: absolute;
 
     right: 18px;
+
     bottom: 18px;
 
     width: 38px;
+
     height: 38px;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.75);
+    background:
+        rgba(255, 255, 255, 0.75);
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     color: var(--azul-texto);
@@ -546,25 +831,32 @@ a {
 .sobre {
     max-width: 1160px;
 
-    margin: 0 auto 70px;
+    margin:
+        0 auto 70px;
 
-    padding: 48px 50px;
+    padding:
+        48px 50px;
 
     background: white;
 
     border-radius: 34px;
 
     box-shadow:
-        0 12px 32px var(--sombra);
+        0 12px 32px
+        var(--sombra);
 
     display: grid;
 
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns:
+        1fr 1.4fr;
 
     gap: 60px;
 
     align-items: center;
 }
+
+
+/* ILUSTRAÇÃO */
 
 .sobre-ilustracao {
     position: relative;
@@ -572,12 +864,18 @@ a {
     min-height: 180px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 }
 
+
+/* LIVRO */
+
 .livro {
     width: 190px;
+
     height: 100px;
 
     position: relative;
@@ -587,60 +885,79 @@ a {
     position: absolute;
 
     width: 95px;
+
     height: 90px;
 
     background: #fffefa;
 
-    border: 2px solid #829ab4;
+    border:
+        2px solid #829ab4;
 }
 
 .pagina.esquerda {
     left: 0;
 
-    border-radius: 8px 4px 4px 14px;
+    border-radius:
+        8px 4px 4px 14px;
 
-    transform: rotate(-3deg);
+    transform:
+        rotate(-3deg);
 }
 
 .pagina.direita {
     right: 0;
 
-    border-radius: 4px 8px 14px 4px;
+    border-radius:
+        4px 8px 14px 4px;
 
-    transform: rotate(3deg);
+    transform:
+        rotate(3deg);
 }
 
 .linha-livro {
     position: absolute;
 
     left: 50%;
+
     top: 5px;
 
     width: 2px;
+
     height: 92px;
 
     background: #8098b0;
 }
 
+
+/* RAMINHO */
+
 .raminho {
     position: absolute;
 
     top: 0;
+
     left: 18%;
 
     font-size: 1.7rem;
 
     color: var(--rosa);
 
-    transform: rotate(-15deg);
+    transform:
+        rotate(-15deg);
 }
 
+
+/* TEXTO SOBRE */
+
 .sobre-texto h2 {
-    font-family: 'Playfair Display', serif;
+    font-family:
+        'Playfair Display',
+        serif;
 
     color: var(--azul-texto);
 
-    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-size:
+        clamp(2rem, 4vw, 3.1rem);
 }
 
 .sobre-texto p {
@@ -667,12 +984,16 @@ a {
 .informacoes {
     max-width: 1100px;
 
-    margin: 0 auto 80px;
+    margin:
+        0 auto 80px;
 
-    padding: 25px 30px;
+    padding:
+        25px 30px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     gap: 30px;
@@ -682,6 +1003,7 @@ a {
 
 .info {
     display: flex;
+
     align-items: center;
 
     gap: 12px;
@@ -695,7 +1017,8 @@ a {
     font-size: 1.45rem;
 }
 
-.info:nth-of-type(2) .icone-identidade {
+.info:nth-of-type(2)
+.icone-identidade {
     color: #e3ae49;
 }
 
@@ -711,7 +1034,8 @@ a {
 footer {
     position: relative;
 
-    padding: 75px 7% 35px;
+    padding:
+        75px 7% 35px;
 
     overflow: hidden;
 
@@ -726,7 +1050,7 @@ footer {
 }
 
 
-/* nuvens do rodapé */
+/* NUVENS DO RODAPÉ */
 
 footer::before {
     content: "";
@@ -734,31 +1058,70 @@ footer::before {
     position: absolute;
 
     top: -55px;
+
     left: -5%;
 
     width: 110%;
+
     height: 100px;
 
     background:
-        radial-gradient(circle at 8% 65%, #fff 0 45px, transparent 47px),
-        radial-gradient(circle at 20% 55%, #fff 0 60px, transparent 62px),
-        radial-gradient(circle at 34% 68%, #fff 0 48px, transparent 50px),
-        radial-gradient(circle at 50% 55%, #fff 0 65px, transparent 67px),
-        radial-gradient(circle at 68% 65%, #fff 0 52px, transparent 54px),
-        radial-gradient(circle at 82% 55%, #fff 0 62px, transparent 64px),
-        radial-gradient(circle at 96% 68%, #fff 0 50px, transparent 52px);
+
+        radial-gradient(
+            circle at 8% 65%,
+            #fff 0 45px,
+            transparent 47px
+        ),
+
+        radial-gradient(
+            circle at 20% 55%,
+            #fff 0 60px,
+            transparent 62px
+        ),
+
+        radial-gradient(
+            circle at 34% 68%,
+            #fff 0 48px,
+            transparent 50px
+        ),
+
+        radial-gradient(
+            circle at 50% 55%,
+            #fff 0 65px,
+            transparent 67px
+        ),
+
+        radial-gradient(
+            circle at 68% 65%,
+            #fff 0 52px,
+            transparent 54px
+        ),
+
+        radial-gradient(
+            circle at 82% 55%,
+            #fff 0 62px,
+            transparent 64px
+        ),
+
+        radial-gradient(
+            circle at 96% 68%,
+            #fff 0 50px,
+            transparent 52px
+        );
 }
+
+
+/* CONTEÚDO DO RODAPÉ */
 
 .rodape-conteudo {
     position: relative;
+
     z-index: 2;
 
     display: grid;
 
     grid-template-columns:
-        1.3fr
-        1fr
-        1fr;
+        1.3fr 1fr 1fr;
 
     gap: 50px;
 
@@ -766,7 +1129,9 @@ footer::before {
 }
 
 .rodape-conteudo h3 {
-    font-family: 'Playfair Display', serif;
+    font-family:
+        'Playfair Display',
+        serif;
 
     font-size: 1.5rem;
 }
@@ -774,6 +1139,9 @@ footer::before {
 .rodape-conteudo p {
     margin-top: 5px;
 }
+
+
+/* LINKS */
 
 .links-rodape,
 .redes {
@@ -791,12 +1159,17 @@ footer::before {
     font-size: 0.9rem;
 }
 
+
+/* FRASE FINAL */
+
 .mensagem-final {
     text-align: right;
 
     margin-top: 30px;
 
-    font-family: 'Sacramento', cursive;
+    font-family:
+        'Sacramento',
+        cursive;
 
     font-size: 1.8rem;
 
@@ -805,7 +1178,7 @@ footer::before {
 
 
 /* =========================
-   RESPONSIVO
+   TABLET
 ========================= */
 
 @media (max-width: 950px) {
@@ -814,9 +1187,16 @@ footer::before {
         display: none;
     }
 
+
+    /* COLEÇÕES */
+
     .grade-colecoes {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
+
+
+    /* SOBRE */
 
     .sobre {
         grid-template-columns: 1fr;
@@ -826,32 +1206,45 @@ footer::before {
 
     .sobre-texto p {
         margin-left: auto;
+
         margin-right: auto;
     }
 
-    .balao-esquerda {
-        left: -25px;
-        opacity: 0.7;
-        transform: scale(0.85);
+
+    /* NUVENS DE PENSAMENTO */
+
+    .pensamento-esquerda {
+        left: -45px;
+
+        top: 80px;
+
+        transform:
+            scale(0.78);
     }
 
-    .balao-direita {
-        right: -30px;
-        opacity: 0.7;
-        transform: scale(0.8);
-    }
+    .pensamento-direita {
+        right: -45px;
 
-    .balao-pequeno {
-        display: none;
+        top: 90px;
+
+        transform:
+            scale(0.75);
     }
 
 }
 
 
+/* =========================
+   CELULAR
+========================= */
+
 @media (max-width: 650px) {
 
+    /* CABEÇALHO */
+
     .topo {
-        padding: 10px 15px;
+        padding:
+            10px 15px;
     }
 
     .logo-marca p {
@@ -864,18 +1257,23 @@ footer::before {
 
     .logo-simbolo {
         width: 38px;
+
         height: 38px;
     }
 
-    .acoes-topo .botao-icone:first-child {
+    .acoes-topo
+    .botao-icone:first-child {
         display: none;
     }
 
 
+    /* HERO */
+
     .hero {
         min-height: 570px;
 
-        padding-top: 75px;
+        padding:
+            120px 15px 100px;
     }
 
     .bem-vinda {
@@ -888,42 +1286,60 @@ footer::before {
 
     .frase-marca {
         letter-spacing: 2px;
+
         font-size: 0.7rem;
     }
 
     .descricao-hero {
         font-size: 0.95rem;
 
-        padding: 0 15px;
+        padding:
+            0 15px;
     }
 
 
-    .balao-esquerda {
-        left: -48px;
-        top: 45px;
+    /* =====================
+       NUVENS DE PENSAMENTO
+    ===================== */
 
-        transform: scale(0.62);
+    .pensamento-esquerda {
+        left: -65px;
 
-        opacity: 0.55;
+        top: 50px;
+
+        transform:
+            scale(0.60);
+
+        opacity: 0.72;
     }
 
-    .balao-direita {
-        right: -54px;
-        top: 90px;
+    .pensamento-direita {
+        right: -70px;
 
-        transform: scale(0.58);
+        top: 85px;
 
-        opacity: 0.55;
+        transform:
+            scale(0.58);
+
+        opacity: 0.70;
     }
 
+    .nuvem-pensamento p {
+        font-size: 1.5rem;
+    }
+
+
+    /* COLEÇÕES */
 
     .colecoes {
         padding-left: 16px;
+
         padding-right: 16px;
     }
 
     .grade-colecoes {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
 
         gap: 12px;
     }
@@ -931,7 +1347,8 @@ footer::before {
     .card-colecao {
         min-height: 215px;
 
-        padding: 22px 17px;
+        padding:
+            22px 17px;
     }
 
     .icone-card {
@@ -947,15 +1364,21 @@ footer::before {
     }
 
 
+    /* SOBRE */
+
     .sobre {
         margin-left: 16px;
+
         margin-right: 16px;
 
-        padding: 35px 25px;
+        padding:
+            35px 25px;
 
         gap: 20px;
     }
 
+
+    /* INFORMAÇÕES */
 
     .informacoes {
         flex-direction: column;
@@ -969,6 +1392,8 @@ footer::before {
         display: none;
     }
 
+
+    /* RODAPÉ */
 
     .rodape-conteudo {
         grid-template-columns: 1fr;
