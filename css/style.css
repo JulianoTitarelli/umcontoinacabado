@@ -271,39 +271,51 @@ a {
    DO CÉU
 ========================= */
 
+/* =========================
+   NUVENS NA BASE DO CÉU
+========================= */
+
 .hero::after {
     content: "";
 
     position: absolute;
+    left: -3%;
+    bottom: -55px;
 
-    left: -5%;
-    bottom: -62px;
-
-    width: 110%;
-    height: 220px;
+    width: 106%;
+    height: 190px;
 
     background:
-        radial-gradient(circle at 4% 66%,  #ffffff 0 70px, transparent 72px),
-        radial-gradient(circle at 11% 58%, #f8dfe9 0 82px, transparent 84px),
-        radial-gradient(circle at 18% 68%, #dff3ff 0 72px, transparent 74px),
+        /* camada da frente */
+        radial-gradient(ellipse at 2% 78%,  #ffffff 0 75px, transparent 77px),
+        radial-gradient(ellipse at 10% 68%, #ffffff 0 95px, transparent 97px),
+        radial-gradient(ellipse at 20% 80%, #ffffff 0 80px, transparent 82px),
+        radial-gradient(ellipse at 30% 67%, #ffffff 0 105px, transparent 107px),
+        radial-gradient(ellipse at 42% 80%, #ffffff 0 82px, transparent 84px),
+        radial-gradient(ellipse at 53% 66%, #ffffff 0 105px, transparent 107px),
+        radial-gradient(ellipse at 65% 80%, #ffffff 0 84px, transparent 86px),
+        radial-gradient(ellipse at 76% 67%, #ffffff 0 105px, transparent 107px),
+        radial-gradient(ellipse at 88% 79%, #ffffff 0 88px, transparent 90px),
+        radial-gradient(ellipse at 98% 67%, #ffffff 0 105px, transparent 107px),
 
-        radial-gradient(circle at 27% 58%, #ffffff 0 86px, transparent 88px),
-        radial-gradient(circle at 36% 69%, #f9e2eb 0 70px, transparent 72px),
-        radial-gradient(circle at 45% 57%, #dff3ff 0 90px, transparent 92px),
+        /* nuvens azuladas ao fundo */
+        radial-gradient(ellipse at 6% 55%,  #e4f5ff 0 80px, transparent 82px),
+        radial-gradient(ellipse at 25% 55%, #dff3ff 0 90px, transparent 92px),
+        radial-gradient(ellipse at 47% 54%, #e5f6ff 0 86px, transparent 88px),
+        radial-gradient(ellipse at 69% 55%, #dff3ff 0 92px, transparent 94px),
+        radial-gradient(ellipse at 92% 54%, #e5f6ff 0 88px, transparent 90px),
 
-        radial-gradient(circle at 55% 68%, #ffffff 0 74px, transparent 76px),
-        radial-gradient(circle at 64% 58%, #f9e1eb 0 84px, transparent 86px),
-        radial-gradient(circle at 73% 68%, #dff3ff 0 72px, transparent 74px),
-
-        radial-gradient(circle at 82% 57%, #ffffff 0 88px, transparent 90px),
-        radial-gradient(circle at 91% 68%, #f8dfe9 0 72px, transparent 74px),
-        radial-gradient(circle at 98% 58%, #dff3ff 0 82px, transparent 84px);
-
-    opacity: 0.98;
+        /* toque rosa bem suave */
+        radial-gradient(ellipse at 15% 60%, #fdeaf1 0 78px, transparent 80px),
+        radial-gradient(ellipse at 38% 58%, #fbe6ee 0 82px, transparent 84px),
+        radial-gradient(ellipse at 61% 59%, #fdeaf1 0 80px, transparent 82px),
+        radial-gradient(ellipse at 84% 58%, #fbe6ee 0 82px, transparent 84px);
 
     z-index: 1;
-}
 
+    filter:
+        drop-shadow(0 -8px 16px rgba(255, 255, 255, 0.25));
+}
 /* =========================
    CONTEÚDO PRINCIPAL HERO
 ========================= */
