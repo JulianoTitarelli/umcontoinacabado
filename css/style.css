@@ -1227,6 +1227,7 @@ footer::before {
 
 @media (max-width: 650px) {
 
+   
     /* CABEÇALHO */
 
     .topo {
@@ -1247,6 +1248,16 @@ footer::before {
 
         height: 38px;
     }
+
+   .decoracao {
+    opacity: 0.45;
+}
+
+.coracao-3,
+.estrela-2,
+.caminho-pontilhado {
+    display: none;
+}
 
     .acoes-topo
     .botao-icone:first-child {
@@ -1399,4 +1410,99 @@ footer::before {
         text-align: center;
     }
 
+}
+/* =========================
+   DECORAÇÕES DO CÉU
+========================= */
+
+.decoracao {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.ceu-coracao {
+    color: #ec9db7;
+    font-size: 2rem;
+    opacity: 0.85;
+}
+
+.coracao-1 {
+    left: 3%;
+    top: 180px;
+    transform: rotate(-12deg);
+}
+
+.coracao-2 {
+    right: 10%;
+    top: 250px;
+    transform: rotate(12deg);
+}
+
+.coracao-3 {
+    right: 25%;
+    bottom: 120px;
+    font-size: 1.5rem;
+}
+
+.estrela {
+    color: #efd18a;
+    opacity: 0.9;
+}
+
+.estrela-1 {
+    left: 28%;
+    top: 85px;
+    font-size: 1.8rem;
+}
+
+.estrela-2 {
+    right: 28%;
+    top: 120px;
+    font-size: 1.4rem;
+}
+
+.estrela-3 {
+    right: 7%;
+    bottom: 145px;
+    font-size: 2rem;
+}
+
+
+/* CAMINHO PONTILHADO */
+
+.caminho-pontilhado {
+    position: absolute;
+
+    right: 17%;
+    bottom: 115px;
+
+    width: 150px;
+    height: 70px;
+
+    z-index: 2;
+
+    border-bottom:
+        2px dashed rgba(232, 137, 168, 0.75);
+
+    border-radius:
+        50%;
+
+    transform:
+        rotate(-12deg);
+
+    opacity: 0.8;
+}
+
+.caminho-pontilhado::after {
+    content: "♡";
+
+    position: absolute;
+
+    right: -10px;
+    top: 5px;
+
+    color: #e89ab3;
+
+    font-size: 1.4rem;
 }
